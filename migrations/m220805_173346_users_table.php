@@ -15,7 +15,7 @@ class m220805_173346_users_table extends Migration
         $this->createTable('users_table', [
             'id' => $this->primaryKey(),
             'username' =>$this->char(50)->notNull()->unique(),
-            `autch_key` =>$this-> varchar(32)->CHARACTER_SET_utf8->NULL,
+            'autch_key' =>$this->char(32)->Null(),
             'info' =>$this->text()->notNull(),
         ]);
     }
